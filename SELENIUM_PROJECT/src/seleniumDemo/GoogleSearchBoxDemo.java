@@ -1,0 +1,44 @@
+package seleniumDemo;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class GoogleSearchBoxDemo {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\shreya\\Desktop\\SeleniumDriver\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.get("https://www.amazon.com/");
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("cake");
+		
+		Thread.sleep(2000);
+	
+	List<WebElement>list_Suggestion=driver.findElements(By.xpath("//div[@id='nav-flyout-searchAjax']//div/descendant::div[@id='issDiv1']"));
+
+	int total=list_Suggestion.size();
+	System.out.println(total);
+	
+	
+	for(int i=0;i<total;i++) {
+		
+		System.out.println(list_Suggestion.get(i).getText());
+		if(list_Suggestion.get(i).getText().contains("in Home & Kitchen")) {
+			list_Suggestion.get(i).click();
+			
+			System.out.println(driver.getCurrentUrl());
+		}
+		
+		
+		
+	}
+	
+	}
+
+}

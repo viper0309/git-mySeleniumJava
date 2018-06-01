@@ -1,0 +1,17 @@
+package selenium;
+
+public class Test {//Encapsulation encapsulate everything into one un
+	
+	public static void main(String[] args) {
+	
+	String[] array=new String [3];
+	 array[0]="shreya";
+	 array[1]="david";
+	 array[2]="alyssa";
+	int len= array.length;
+	System.out.println(array[2]);
+		for(int i=0;i<len;i++) {
+			System.out.println(array[i]);
+		}
+	}
+}

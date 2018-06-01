@@ -1,0 +1,13 @@
+package com.java.tests;
+
+public class TestJava {
+
+	public static void main(String[] args) {
+		int i=10;
+		do {
+			System.out.println("total i "+i);
+	i++;
+	}while(i<=20);
+
+}
+}

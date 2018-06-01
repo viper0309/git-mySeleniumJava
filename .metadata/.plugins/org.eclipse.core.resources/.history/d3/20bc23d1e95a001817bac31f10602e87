@@ -1,0 +1,47 @@
+package FreeCRM;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class FreeCREMLogin {
+
+	@Test(dataProvider="FreeCRMdata")
+	public void loginFreeCRM(String user, String pass) {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\shreya\\Desktop\\SeleniumDriver\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.get("https://www.freecrm.com/index.html");
+		driver.findElement(By.name("username")).sendKeys(pass);
+		driver.findElement(By.name("password")).sendKeys(pass);
+		driver.findElement(By.xpath("//input[@value='Login']")).click();
+	
+	System.out.println(driver.getTitle());
+	
+	driver.quit();
+	
+	
+	}
+	@DataProvider(name="FreeCRMdata")
+	public static Object[][] passData() {
+		
+		
+		Object[][] data=new Object[3][2];
+		data [0][0]="naveenk";
+		data [0][1]="test@123";
+		
+		data [1][0]="naveenk1";
+		data [1][1]="test@1231";
+		
+		data [2][0]="naveenk2";
+		data [2][1]="test@1232";
+		
+		return data;
+	}
+}

@@ -1,0 +1,32 @@
+package selenium;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Test {//Encapsulation encapsulate everything into one un
+	public static WebDriver driver;
+	
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\shreya\\Desktop\\SeleniumDriver\\chromedriver.exe");
+		 driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.get("https://www.facebook.com/");
+		
+	WebElement selectMonth=driver.findElement(By.name("month"));
+	Select month_select=new Select(selectMonth);
+	month_select.selectByIndex(3);
+	String name=selectMonth.getText();
+	System.out.println(name);
+	WebElement mo=month_select.getFirstSelectedOption();
+	System.out.println(mo);
+		
+		
+		
+	}
+}

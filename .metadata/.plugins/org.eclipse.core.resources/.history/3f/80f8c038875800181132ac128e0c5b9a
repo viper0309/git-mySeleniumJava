@@ -1,0 +1,29 @@
+package com.java.tests;
+
+public class ArryaTests {
+	
+public static void main(String[] args) {
+int a=200;
+String intCovertToString=String.valueOf(a);
+System.out.println(intCovertToString);
+		}
+	
+	
+	
+	
+	
+	
+	 
+		 
+	 
+		
+	
+	
+
+
+public static void arrayMane(String name) {
+	System.out.println("Hi "+name);
+	
+	
+}
+}

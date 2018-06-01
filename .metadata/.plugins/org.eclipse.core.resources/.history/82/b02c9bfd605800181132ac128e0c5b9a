@@ -1,0 +1,19 @@
+package com.java.tests;
+
+public class ArryaTests {
+	
+public static void main(String[] args) {
+	String array[]= {"alyssa","mommy","david"};
+	for(int i=0;i<=array.length;i++) {
+		arrayMane(array[i]);
+		
+	}
+	
+}
+
+public static void arrayMane(String name) {
+	System.out.println("Hi "+name);
+	
+	
+}
+}

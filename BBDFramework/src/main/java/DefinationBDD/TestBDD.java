@@ -1,0 +1,55 @@
+package DefinationBDD;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class TestBDD {
+	WebDriver driver;
+	
+	@Given("^FreeCRM url is available$")
+	public void freeCRM_url_available() {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\shreya\\Desktop\\SeleniumDriver\\chromedriver.exe");
+		  driver=new ChromeDriver();
+		  driver.get("https://www.freecrm.com/index.html");
+		
+	}
+	@When("^title is login page is freeCRM$")
+	public void title_is_login_page_is_freeCRM() {
+		String title=driver.getTitle();
+		Assert.assertEquals("Free CRM software in the cloud powers sales and customer service", title);
+		
+	}
+	@Then("^User enter user name$")
+	public void user_enter_user_name() {
+		driver.findElement(By.name("username")).sendKeys("naveenk");
+		
+		
+	}
+	@Then("^user enter password(\\d+)$")
+	public void user_enter_password(int arg1)  {
+		driver.findElement(By.name("password")).sendKeys("test@123");
+	}
+
+	@Then("^user click on login button$")
+	public void user_click_on_login_button()  {
+		
+		
+		WebElement clickButton=driver.findElement(By.xpath("//input[@value='Login']"));
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", js);
+}
+	@Then("^user is navegate to account home page$")
+	public void user_is_navegate_to_account_home_page() {
+		 String homeTitle=driver.getTitle();
+		 Assert.assertEquals("CRMPRO", homeTitle);
+	}
+}

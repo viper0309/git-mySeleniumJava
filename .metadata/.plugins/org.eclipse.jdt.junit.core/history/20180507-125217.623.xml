@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="BBDFramework" tests="6" started="6" failures="0" errors="2" ignored="1">
+  <testsuite name="Runner.TestRunner" time="0.791">
+    <testsuite name="Feature: Free CRM login feature" time="0.791">
+      <testsuite name="Scenario: Free CRM login Test Scenario" time="0.784" incomplete="true">
+        <error>java.lang.IllegalArgumentException: Argument is of an illegal type: org.openqa.selenium.chrome.ChromeDriver&#13;
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:84)&#13;
+	at com.google.common.collect.Iterators$6.transform(Iterators.java:820)&#13;
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48)&#13;
+	at com.google.common.collect.Iterators.addAll(Iterators.java:373)&#13;
+	at com.google.common.collect.Lists.newArrayList(Lists.java:165)&#13;
+	at com.google.common.collect.Lists.newArrayList(Lists.java:150)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:580)&#13;
+	at DefinationBDD.TestBDD.user_click_on_login_button(TestBDD.java:48)&#13;
+	at ✽.Then user click on login button(login.feature:9)&#13;
+&#13;
+</error>
+        <testcase name="Given FreeCRM url is available" classname="Scenario: Free CRM login Test Scenario" time="0.035"/>
+        <testcase name="When title is login page is freeCRM" classname="Scenario: Free CRM login Test Scenario" time="0.494"/>
+        <testcase name="Then User enter user name" classname="Scenario: Free CRM login Test Scenario" time="0.195"/>
+        <testcase name="And user enter password7" classname="Scenario: Free CRM login Test Scenario" time="0.052"/>
+        <testcase name="Then user click on login button" classname="Scenario: Free CRM login Test Scenario" time="0.007">
+          <error>java.lang.IllegalArgumentException: Argument is of an illegal type: org.openqa.selenium.chrome.ChromeDriver&#13;
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:84)&#13;
+	at com.google.common.collect.Iterators$6.transform(Iterators.java:820)&#13;
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48)&#13;
+	at com.google.common.collect.Iterators.addAll(Iterators.java:373)&#13;
+	at com.google.common.collect.Lists.newArrayList(Lists.java:165)&#13;
+	at com.google.common.collect.Lists.newArrayList(Lists.java:150)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:580)&#13;
+	at DefinationBDD.TestBDD.user_click_on_login_button(TestBDD.java:48)&#13;
+	at ✽.Then user click on login button(login.feature:9)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And user is navegate to account home page" classname="Scenario: Free CRM login Test Scenario" time="0.005" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

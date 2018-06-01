@@ -1,0 +1,38 @@
+package com.java.tests;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+public class ArryaTests {
+	
+	 public static WebDriver driver;
+	
+	 public static void browser() {
+		 driver.get("https://www.google.com");	 
+	 }
+	 
+public static void main(String[] args) {
+
+	
+	
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\shreya\\Desktop\\SeleniumDriver\\chromedriver.exe");
+
+driver=new ChromeDriver();
+browser();
+
+System.setProperty("webdriver.ie.driver", "C:\\Users\\shreya\\Desktop\\SeleniumDriver\\IEDriverServer.exe");
+
+driver=new InternetExplorerDriver();
+
+
+	
+	}
+	
+
+public static void arrayMane(String name) {
+	System.out.println("Hi "+name);
+	
+	
+}
+}

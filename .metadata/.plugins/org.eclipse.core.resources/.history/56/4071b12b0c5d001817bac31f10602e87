@@ -1,0 +1,12 @@
+package selenium;
+
+public class Test {//Encapsulation encapsulate everything into one un
+	
+	public static void main(String[] args) {
+		String name="shreya madan";
+		String [] spit=name.split(" ");
+		for(int i=0;i<spit.length;i++) {
+		System.out.println(spit[i]);	
+		}
+	}
+}

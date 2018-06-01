@@ -1,0 +1,19 @@
+package selenium;
+
+
+
+
+
+public class Test {
+
+	public static void main(String[] args) {
+	String name="shreyaa";
+	
+		if(name.contains(name)) {
+		System.out.println("correct");
+	}else {
+		System.out.println("incorrect");
+	}
+	}
+}
+

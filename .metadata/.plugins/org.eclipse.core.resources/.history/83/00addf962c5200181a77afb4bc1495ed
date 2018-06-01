@@ -1,0 +1,14 @@
+package DefinationBDD;
+
+import cucumber.api.java.en.Given;
+
+public class TestBDD {
+	
+	
+	@Given("^FreeCRM url is available$")
+	public void freeCRM_url_available() {
+		
+	}
+	
+
+}

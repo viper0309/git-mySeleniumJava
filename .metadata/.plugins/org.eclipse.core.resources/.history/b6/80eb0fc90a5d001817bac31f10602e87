@@ -1,0 +1,29 @@
+package selenium;
+
+public class Test {//Encapsulation encapsulate everything into one unit
+
+	static int a=10;
+	static int b=20;
+	
+	
+	public static void main(String[] args) {
+		
+		Test obj=new Test();
+		
+		int t=add(a, b);
+		
+	}
+		public static int add(int a, int b) {
+			int c=a+b;
+		
+			System.out.println(c);
+			return c;
+		}
+		
+		
+	
+	}
+	
+	
+
+

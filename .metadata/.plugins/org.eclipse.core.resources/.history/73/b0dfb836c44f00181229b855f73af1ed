@@ -1,0 +1,18 @@
+package com.java.tests;
+
+import java.util.ArrayList;
+
+public class ArrayListDemo {
+
+	public static void main(String[] args) {
+		ArrayList arraylist=new ArrayList();
+		arraylist.add("shreya");
+		arraylist.add(300);
+		arraylist.add(23.677);
+		int sizeOfArray=arraylist.size();
+		System.out.println(arraylist);
+		
+
+	}
+
+}

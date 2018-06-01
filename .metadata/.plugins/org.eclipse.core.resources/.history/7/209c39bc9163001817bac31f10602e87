@@ -1,0 +1,26 @@
+package seleniumDemo;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TakeScreenShot {
+
+	public static void main(String[] args) {
+
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\shreya\\Desktop\\SeleniumDriver\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
+		driver.findElement(By.xpath("//input[@type='submit']")).click();
+	Alert alertHandle=driver.switchTo().alert();
+	//alertHandle.dismiss();
+	String getTextAlert=alertHandle.getText();
+	System.out.println("This is a Alert popup====> "+getTextAlert);
+	
+	
+	alertHandle.accept();
+	}
+
+}

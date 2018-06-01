@@ -1,0 +1,20 @@
+package com.java.tests;
+
+public class ArryaTests {
+	
+	public static void nameArray(String name) {
+		System.out.println("Hi "+name);
+	}
+	
+
+	public static void main(String[] args) {
+String aName[]= {"alyssa","mommy","david"};
+System.out.println(aName.length);
+
+for(int i=0;i<=aName.length;i++) {
+	nameArray(aName[i]);
+	
+}
+	}
+
+}

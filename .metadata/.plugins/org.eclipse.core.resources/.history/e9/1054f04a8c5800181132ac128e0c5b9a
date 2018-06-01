@@ -1,0 +1,43 @@
+package com.java.tests;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class ArryaTests {
+	
+public static void main(String[] args) {
+
+	HashMap<String, String> h=new HashMap<>();
+	
+	h.put("shreya", "address");
+
+	h.put("alyssa", "address12");
+	for(int i=0;i<h.size();i++) {
+		System.out.println(h.get(i));
+		
+	}
+	
+	
+	
+	
+		}
+	
+	
+	
+	
+	
+	
+	 
+		 
+	 
+		
+	
+	
+
+
+public static void arrayMane(String name) {
+	System.out.println("Hi "+name);
+	
+	
+}
+}

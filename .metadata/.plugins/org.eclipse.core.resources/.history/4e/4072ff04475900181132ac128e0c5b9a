@@ -1,0 +1,32 @@
+package com.java.tests;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+public class ArryaTests {
+	
+	public static void main(String[] args) {
+	
+		String name="shreya";
+		System.out.println("before revers the name "+name);
+		String rev="";
+		
+		for(int i=0;i>=name.length();i--) {
+			rev=rev+name.charAt(i);
+			
+		System.out.println("after revers the name "+rev);	
+		}
+		
+		
+	
+	
+	}
+	
+
+public static void arrayMane(String name) {
+	System.out.println("Hi "+name);
+	
+	
+}
+}

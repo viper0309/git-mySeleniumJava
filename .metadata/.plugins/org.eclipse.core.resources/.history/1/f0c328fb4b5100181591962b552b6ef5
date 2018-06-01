@@ -1,0 +1,13 @@
+package selenium;
+
+import org.apache.log4j.Logger;
+
+public class Log4gTest {
+	
+	public static void main(String[] args) {
+		
+		Logger.getLogger("")
+		
+	}
+
+}

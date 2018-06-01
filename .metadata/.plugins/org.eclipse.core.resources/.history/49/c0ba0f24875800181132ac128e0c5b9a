@@ -1,0 +1,30 @@
+package com.java.tests;
+
+public class ArryaTests {
+	
+public static void main(String[] args) {
+String a="100";
+double stringToDouble=Double.parseDouble(a);
+			
+	System.out.println(stringToDouble);
+		}
+	
+	
+	
+	
+	
+	
+	 
+		 
+	 
+		
+	
+	
+
+
+public static void arrayMane(String name) {
+	System.out.println("Hi "+name);
+	
+	
+}
+}

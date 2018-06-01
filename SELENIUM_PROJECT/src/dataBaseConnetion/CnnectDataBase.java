@@ -1,0 +1,41 @@
+package dataBaseConnetion;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import org.testng.annotations.Test;
+
+public class CnnectDataBase {
+
+	@Test
+	public void testDB() throws ClassNotFoundException, SQLException {
+		Class.forName("com.mysql.jdbc.Driver");
+		System.out.println("Driver Loaded");
+
+Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/bank","root","1234");
+	System.out.println("connected to DB");
+	Statement createStatement=conn.createStatement();
+	ResultSet rs=createStatement.executeQuery("SElECT * FROM account");
+	
+	while(rs.next()) {
+	String availBalance=rs.getString("avail_balance");	
+	System.out.println("avail balnce are "+availBalance);
+	
+	String productCD=rs.getString("product_cd");	
+	System.out.println("avail balnce are "+productCD);
+	
+	
+	Statement createStatement1=conn.createStatement();
+	ResultSet rs1=createStatement1.executeQuery("SELECT * FROM customer");
+	
+	String state_data=rs1.getString("state");
+	System.out.println("state data"+state_data);
+		
+	}
+	
+	
+	}
+}

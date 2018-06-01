@@ -1,0 +1,32 @@
+package com.java.tests;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+public class ArryaTests {
+	
+	public static void main(String[] args) {
+		int a=10;
+		int b=20;
+		int temp=a;
+		a=temp;
+		a=b;
+		b=temp;
+		System.out.println("the value of A is "+a);
+		System.out.println("the value of B is "+b);
+		
+		
+		
+		
+	
+	
+	}
+	
+
+public static void arrayMane(String name) {
+	System.out.println("Hi "+name);
+	
+	
+}
+}

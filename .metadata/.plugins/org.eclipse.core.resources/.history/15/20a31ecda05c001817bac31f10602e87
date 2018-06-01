@@ -1,0 +1,29 @@
+package com.java.tests;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+public class ArryaTests {
+	
+	public static void main(String[] args) {
+	String name="interview";	
+	int len=name.length();
+	String revers="";
+	
+	for(int i=len-1;i<=0;i--) {
+		len
+		
+	}
+		
+	
+	
+	}
+	
+
+public static void arrayMane(String name) {
+	System.out.println("Hi "+name);
+	
+	
+}
+}

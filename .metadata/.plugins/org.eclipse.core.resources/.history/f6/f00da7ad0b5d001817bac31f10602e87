@@ -1,0 +1,12 @@
+package selenium;
+
+public class Test {//Encapsulation encapsulate everything into one unit
+
+	public static String name="shreya";
+	
+	public static void main(String[] args) {
+		
+		boolean l=name.startsWith(name);
+		System.out.println(l);
+	}
+}

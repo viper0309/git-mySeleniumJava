@@ -1,0 +1,41 @@
+package selenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class CrossBrowserTesting {
+
+	WebDriver driver;
+	
+	@Test
+	@Parameters("browser")
+	public void verifyCrossBrowser(String crossBrowser) {
+		
+		if(crossBrowser.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\shreya\\Desktop\\SeleniumDriver\\chromedriver.exe");
+			  driver=new ChromeDriver();
+			 
+		}else if(crossBrowser.equalsIgnoreCase("IEDriver")) {
+			System.setProperty("webdriver.ie.driver", "C:\\Users\\shreya\\Desktop\\SeleniumDriver\\IEDriverServer.exe");
+ driver=new InternetExplorerDriver();
+
+		}
+
+driver.manage().window().maximize();
+
+driver.get("https://www.linkedin.com");
+
+System.out.println(driver.getTitle());
+
+driver.quit();
+
+		
+		
+	}
+
+	}
+
+

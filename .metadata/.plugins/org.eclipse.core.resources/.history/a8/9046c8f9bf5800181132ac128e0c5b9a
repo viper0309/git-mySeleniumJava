@@ -1,0 +1,7 @@
+package com.FreeCRM.Pages;
+
+import com.FreeCRM.base.Testbase;
+
+public class HomePage extends Testbase{
+
+}

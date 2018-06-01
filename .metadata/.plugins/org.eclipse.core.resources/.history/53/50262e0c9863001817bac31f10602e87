@@ -1,0 +1,10 @@
+package seleniumDemo;
+
+public class ExflicitWait_ImflicitWait {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

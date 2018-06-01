@@ -1,0 +1,26 @@
+package selenium;
+
+
+
+
+
+public class Test {
+
+	public static void main(String[] args) {
+	String name="shreyaa";
+
+	switch(name) {
+	
+	case "shreya":
+		System.out.println("thats Right");
+	case "david":
+		System.out.println("no way");
+	case "pp":
+		System.out.println("bye");
+	}
+		
+	
+	}
+	}
+
+

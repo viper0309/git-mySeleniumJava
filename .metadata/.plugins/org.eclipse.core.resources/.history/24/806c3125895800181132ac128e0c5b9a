@@ -1,0 +1,43 @@
+package com.java.tests;
+
+import java.util.ArrayList;
+
+public class ArryaTests {
+	
+public static void main(String[] args) {
+
+	ArrayList<String> arraylist1=new ArrayList<String>();
+	
+	arraylist1.add("alyssa");
+	arraylist1.add("david");
+	arraylist1.add("mommy");
+	int len=arraylist1.size();
+	for(int i=0;i<arraylist1.size();i++) {
+		System.out.println(arraylist1.get(i));
+	}
+	
+	
+	
+	
+	
+		}
+	
+	
+	
+	
+	
+	
+	 
+		 
+	 
+		
+	
+	
+
+
+public static void arrayMane(String name) {
+	System.out.println("Hi "+name);
+	
+	
+}
+}
